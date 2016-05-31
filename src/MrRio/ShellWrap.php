@@ -30,6 +30,7 @@ class ShellWrap
     private static $stdin = null;
 
     public static $exec_string;
+    public static $exclude_which_command = array('cd');
 
     public function __construct($prepend = null)
     {
@@ -122,7 +123,9 @@ class ShellWrap
         // Prepend the path
 
         $parts = explode(' ', $shell);
-        $parts[0] = exec('which ' . $parts[0]);
+        if (!in_array($parts[0], self::$exclude_which_command)) {
+            $parts[0] = exec('which ' . $parts[0]);
+        }
 
         if ($parts[0] != '') {
             $shell = implode(' ', $parts);
