@@ -1,15 +1,15 @@
 {
-    "name": "mrrio/shellwrap",
+    "name": "icyboy/shellwrap",
     "type": "library",
     "description": "Use any command-line tool as a PHP function.",
     "keywords": ["command", "shell", "api", "command-line", "exec"],
-    "homepage": "http://github.com/MrRio/shellwrap",
+    "homepage": "https://github.com/icyxp/shellwrap",
     "license": "MIT",
     "authors": [
         {
-            "name": "James Hall",
-            "email": "james@snapshotmedia.co.uk",
-            "homepage": "http://twitter.com/MrRio",
+            "name": "icyboy",
+            "email": "icyboy@me.com",
+            "homepage": "https://github.com/icyxp/swmen",
             "role": "Developer"
         }
     ],
@@ -21,7 +21,7 @@
     
     "autoload": {
         "psr-0": {
-            "MrRio": "src/"
+            "icyboy": "src/"
         }
     }
 }
